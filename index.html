@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind and daisy ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!-- internal file link  -->
+ <link rel="stylesheet" href="style/style.css">
+<title>Dev Board</title> <title>Dev Board</title>
+<style>
+  /* color */
+  .main-bg-color {
+       /* background-color: rgba(43, 68, 234, 0); */
+       background-color:rgb(230, 232, 255);
+  }
+  .background-color {
+    background-color: aqua;
+  }
+  .text-color{
+    color :rgba(0, 48, 60, 1.00)
+  }
+  .btn-color{
+    color:rgba(55, 82, 253, 1.00)
+  }
+  .primary-color{
+    background-color: white;
+  }
+</style>
+</head>
+<body class="px-20 pt-8 pb-12 grid gap-5 background-color ">
+  <header>
+    <!-- navbar section -->
+    <nav class="border-2 bg-white p-5 w-full flex justify-between items-center">
+       <div class="flex gap-2 items-center">
+        <img src="assets/logo.png" alt="">
+       <h3 class="text-4xl">Dev<span>Board</span></h3>
+       </div>
+     <div class="flex gap-10 items-center">
+      <div class="flex gap-2 items-center main-bg-color rounded-2xl px-4 py-2"> 
+        <img class="w-6 h-6" src="assets/checkbox.png" alt="">
+        <h3 class="text-2xl poppins-semibold">23</h3>
+      </div>
+       <div class="main-bg-color rounded-full p-2">
+        <img class="w-10 " src="assets/theme-btn.png" alt="">
+       </div>
+     </div>
+    </nav>
+    </header>
+    <main class="grid grid-cols-4 gap-5">
+    <!-- main content section -->
+     <section class="border-2 grid grid-rows-4 p-5 gap-10 col-span-3 bg-orange-700 h-100">
+      <!-- 1st 3 box -->
+      <div class="grid grid-cols-4 justify-between row-span-1 gap-3">
+        <!-- box 1 -->
+        <div class="border-2 col-auto rounded-lg  bg-sky-50" >
+          <img class="w-6 h-6" src="assets/checkbox.png" alt="">
+          <p class="text-sm poppins-medium">Task Assigned</p>
+          <p class="poppins-bold text-base">05</p>
+        </div>
+      <div class="border-2 col-span-2 rounded-lg bg-sky-50" >2</div>
+      <div class="border-2 col-auto rounded-lg bg-sky-50" >3</div>
+      </div>
+      <!-- 2nd 6 box -->
+     <div class="grid grid-cols-3 grid-rows-2 gap-5 row-span-3">
+      <div class="border-2 col-span-1 row-span-1 rounded-lg  bg-sky-50" >4</div>
+      <div class="border-2 col-span-1 row-span-1 rounded-lg  bg-sky-50" >5</div>
+      <div class="border-2 col-span-1 row-span-1 rounded-lg bg-sky-50" >6</div>
+      <div class="border-2 col-span-1 row-span-1 rounded-lg bg-sky-50" >7</div>
+      <div class="border-2 col-span-1 row-span-1 rounded-lg bg-sky-50" >8</div>
+      <div class="border-2 col-span-1 row-span-1 rounded-lg bg-sky-50" >9</div>
+     </div>
+    
+     </section>
+     <!-- aside section -->
+      <section class="border-2 bg-orange-700  h-100">
+    
+      </section>
+    </main>
+</body>
+
+</html>
