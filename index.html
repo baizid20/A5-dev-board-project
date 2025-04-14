@@ -11,7 +11,7 @@
 <title>Dev Board</title> <title>Dev Board</title>
 <style>
   /* color */
-  
+ 
   .background-color {
     /* background-color: aqua; */
     background-color:rgb(230, 232, 255);
@@ -49,13 +49,14 @@
     </header>
     <main class="grid grid-cols-4 gap-5">
     <!-- main content section -->
-     <section class="border-2 grid grid-rows-4 p-5 gap-10 col-span-3 bg-white h-100">
+     <section class="border-2 grid grid-rows-4  p-5 gap-10 col-span-3 bg-white ">
       <!-- 1st 3 box -->
-      <div class="grid grid-cols-4 justify-between row-span-1 gap-3">
+      <div class="grid   grid-cols-9 justify-between row-span-1 gap-3">
         <!-- box 1 of 1st 3box-->
-        <div class="items-center p-5 border-2 col-auto rounded-lg grid grid-cols-3 background-color" >
-         <div class="">
-          <img class="w-8 h-8 p-1.5 bg-white rounded-md  " src="assets/checkbox.png" alt="">
+        <div class="items-center  border-2 p-5 col-span-2 rounded-lg grid grid-cols-3 background-color" >
+         <div class="rounded-full px-1 py-4 grid justify-center p-1 bg-white ">
+         
+          <img class="w-8 h-8  " src="assets/checkbox.png" alt="">
          </div>
          <div>
           <p class="text-sm poppins-medium text-nowrap col-span-2">Task Assigned</p>
@@ -63,9 +64,13 @@
          </div>
         </div>
         <!-- box 2 of 1st 3box -->
-      <div class="border-2 col-span-2 rounded-lg bg-sky-50" >2</div>
+      <div class="border-2 col-span-5 rounded-lg  flex items-center   pt-10 pb-10 pl-10 pr-20 
+      bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] gap-x-8 to-[#9BA8F8]" id="linear">
+        <img src="assets/board.png" alt="">
+        <p class="poppins-medium text-3xl text-white">Discover Something <br> New Today!</p>
+      </div>
       <!-- box 3 of 1st 3box -->
-      <div class="items-center p-5 border-2 col-auto rounded-lg grid grid-cols-3 background-color" >
+      <div class="items-center p-5 border-2   col-span-2 rounded-lg grid grid-cols-3 background-color" >
         <img class="w-8 h-8  bg-white p-1.5 rounded-md" src="assets/calender.png" alt="">
        <div>
         <p id="weak" class="text-sm poppins-medium text-nowrap col-span-2">wed</p>
