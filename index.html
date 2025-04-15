@@ -17,29 +17,34 @@
     background-color:rgb(230, 232, 255);
 
   }
-  .text-color{
+  .texxt-color{
     color :rgba(0, 48, 60, 1.00)
+   
   }
   .btn-color{
-    color:rgba(55, 82, 253, 1.00)
+    background-color:rgba(55, 82, 253, 1.00)
   }
   .primary-color{
     background-color: white;
   }
+  .second-text-color{
+    color:#000000
+  }
+  
 </style>
 </head>
-<body class="px-20 pt-8 pb-12 grid gap-5 background-color ">
+<body class="px-20 pt-8 pb-12 grid gap-5 background-color  ">
   <header>
     <!-- navbar section -->
-    <nav class="border-2 bg-white p-5 w-full flex justify-between items-center">
+    <nav class=" bg-white p-5 w-full flex justify-between items-center">
        <div class="flex gap-2 items-center">
         <img src="assets/logo.png" alt="">
-       <h3 class="text-4xl">Dev<span>Board</span></h3>
+       <h3 class="text-4xl texxt-color">Dev<span class="poppins-bold">Board</span></h3>
        </div>
      <div class="flex gap-10 items-center">
       <div class="flex gap-2 items-center background-color rounded-2xl px-4 py-2"> 
         <img class="w-6 h-6" src="assets/checkbox.png" alt="">
-        <h3 class="text-2xl poppins-semibold">23</h3>
+        <h3 class="text-2xl poppins-semibold texxt-color">23</h3>
       </div>
        <div class="background-color rounded-full p-2">
         <img id="theme-btn" class="w-10 " src="assets/theme-btn.png" alt="">
@@ -49,53 +54,174 @@
     </header>
     <main class="grid grid-cols-4 gap-5">
     <!-- main content section -->
-     <section class="border-2 grid grid-rows-4  p-5 gap-10 col-span-3 bg-white ">
+     <section class=" grid grid-rows-4  p-5 gap-10 col-span-3 bg-white rounded-lg ">
       <!-- 1st 3 box -->
       <div class="grid   grid-cols-9 justify-between row-span-1 gap-3">
         <!-- box 1 of 1st 3box-->
-        <div class="items-center  border-2 p-5 col-span-2 rounded-lg grid grid-cols-3 background-color" >
-         <div class="rounded-full px-1 py-4 grid justify-center p-1 bg-white ">
-         
-          <img class="w-8 h-8  " src="assets/checkbox.png" alt="">
+        <div class="items-center gap-x-5  p-5 col-span-2 rounded-lg grid grid-cols-3 background-color " >
+         <div class="rounded-full px-3 py-3 grid justify-center p-1 bg-white ">
+          <img class="w-full h-full  " src="assets/checkbox.png" alt="">
          </div>
          <div>
-          <p class="text-sm poppins-medium text-nowrap col-span-2">Task Assigned</p>
-          <p class="poppins-bold text-base">05</p>
+          <p class="text-base poppins-medium texxt-color text-nowrap col-span-2">Task Assigned</p>
+          <p class="poppins-bold text-2xl texxt-color">05</p>
          </div>
         </div>
         <!-- box 2 of 1st 3box -->
-      <div class="border-2 col-span-5 rounded-lg  flex items-center   pt-10 pb-10 pl-10 pr-20 
+      <div class="col-span-5 rounded-lg  flex items-center   pt-10 pb-10 pl-10 pr-20 
       bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] gap-x-8 to-[#9BA8F8]" id="linear">
         <img src="assets/board.png" alt="">
-        <p class="poppins-medium text-3xl text-white">Discover Something <br> New Today!</p>
+        <p class="poppins-medium text-3xl  text-white">Discover Something <br> New Today!</p>
       </div>
       <!-- box 3 of 1st 3box -->
-      <div class="items-center p-5 border-2   col-span-2 rounded-lg grid grid-cols-3 background-color" >
-        <img class="w-8 h-8  bg-white p-1.5 rounded-md" src="assets/calender.png" alt="">
+      <div class="items-center p-5  gap-x-5 rounded-lg col-span-2 rounded-lg grid grid-cols-3 background-color" >
+        <div class=" rounded-full px-3 py-3  grid justify-center p-1 bg-white ">
+          <img class="w-full h-full   rounded-md" src="assets/calender.png" alt="">
+        </div>
        <div>
-        <p id="weak" class="text-sm poppins-medium text-nowrap col-span-2">wed</p>
-        <p id="localdate" class="poppins-bold text-sm text-nowrap">11/4/2025</p>
+        <p id="weak" class="text-base texxt-color poppins-medium text-nowrap col-span-2">wed</p>
+        <p id="localdate" class="poppins-bold texxt-color text-xl text-nowrap">11/4/2025</p>
        </div>
       </div>
       </div>
       <!-- 2nd 6 box -->
-     <div class="grid grid-cols-3 grid-rows-2 gap-5 row-span-3">
-      <div class="border-2 col-span-1 row-span-1 rounded-lg  background-color" >4</div>
-      <div class="border-2 col-span-1 row-span-1 rounded-lg  background-color" >5</div>
-      <div class="border-2 col-span-1 row-span-1 rounded-lg background-color" >6</div>
-      <div class="border-2 col-span-1 row-span-1 rounded-lg background-color" >7</div>
-      <div class="border-2 col-span-1 row-span-1 rounded-lg background-color" >8</div>
-      <div class="border-2 col-span-1 row-span-1 rounded-lg background-color" >9</div>
+     <div class="grid grid-cols-3 grid-rows-2 gap-5 row-span-3 ">
+       <!-- 2nd 6 box - box-1 -->
+      <div class=" col-span-1 row-span-1 rounded-lg  background-color  " >
+        <div class="p-6 grid gap-y-7  ">
+          <p class="poppins-medium text-lg texxt-color text-center bg-white px-4 py-3  w-1/3 rounded-sm">ShopEase</p>
+          <h3 class="poppins-medium tracking-wider text-2xl texxt-color">Fix Mobile Button Issue</h3>
+         
+            <div class="truncate w-11/12 bg-white p-6 rounded-xl ">
+              <p class="text-base poppins-regular second-text-color opacity-50 ">Debug using Chrome</p>
+              <p class="truncate text-base poppins-regular second-text-color opacity-50 ">DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+            </div>
+        </div>
+        <div class="flex p-6 justify-between items-center">
+         <div>
+          <p class="text-sm poppins-regular texxt-color opacity-70">Deadline</p>
+          <h5 class="text-base poppins-medium texxt-color  ">21 March 2025</h5>
+         </div>
+          <button class="btn btn-color text-white text-base poppins-medium rounded-lg px-7 py-6">Completed</button>
+        </div>
+      </div>
+       <!-- 2nd 6 box - box-2 -->
+      <div class=" col-span-1 row-span-1 rounded-lg  background-color  " >
+        <div class="p-6 grid gap-y-7  ">
+          <p class="poppins-medium text-lg texxt-color text-center bg-white px-4 py-3  w-1/3  rounded-sm">CloudSync</p>
+          <h3 class="poppins-medium tracking-wider text-2xl texxt-color">Add Dark Mode</h3>
+         
+            <div class="truncate w-11/12 bg-white p-6 rounded-xl ">
+              <p class="text-base poppins-regular second-text-color opacity-50 ">Store the user's preference in</p>
+              <p class="truncate text-base poppins-regular second-text-color opacity-50 ">localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+            </div>
+        </div>
+        <div class="flex p-6 justify-between items-center">
+         <div>
+          <p class="text-sm poppins-regular texxt-color opacity-70">Deadline</p>
+          <h5 class="text-base poppins-medium texxt-color  ">21 March 2025</h5>
+         </div>
+          <button class="btn btn-color text-white text-base poppins-medium rounded-lg px-7 py-6">Completed</button>
+        </div>
+      </div>
+       <!-- 2nd 6 box - box-3 -->
+      <div class=" col-span-1 row-span-1 rounded-lg  background-color  " >
+        <div class="p-6 grid gap-y-7  ">
+          <p class="poppins-medium text-lg texxt-color text-center bg-white px-4 py-3  w-1/3 rounded-sm">SwiftPay</p>
+          <h3 class="poppins-medium tracking-wider text-2xl texxt-color">Optimize  Home page </h3>
+         
+            <div class="truncate w-11/12 bg-white p-6 rounded-xl ">
+              <p class="text-base poppins-regular second-text-color opacity-50 ">Debug using Chrome</p>
+              <p class="truncate text-base poppins-regular second-text-color opacity-50 "> DevTools, check for overlapping elements, and ensure onClick works properly
+                and ensure onClick works properly check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+            </div>
+        </div>
+        <div class="flex p-6 justify-between items-center">
+         <div>
+          <p class="text-sm poppins-regular texxt-color opacity-70">Deadline</p>
+          <h5 class="text-base poppins-medium texxt-color  ">21 March 2025</h5>
+         </div>
+          <button class="btn btn-color text-white text-base poppins-medium rounded-lg px-7 py-6">Completed</button>
+        </div>
+      </div>
+       <!-- 2nd 6 box - box-4 -->
+      <div class=" col-span-1 row-span-1 rounded-lg  background-color  " >
+        <div class="p-6 grid gap-y-7  ">
+          <p class="poppins-medium text-lg texxt-color text-center bg-white px-4 py-3  w-1/3  rounded-sm">Meta</p>
+          <h3 class="poppins-medium tracking-wider text-2xl texxt-color">Add new emoji 🤲</h3>
+         
+            <div class="truncate w-11/12 bg-white p-6 rounded-xl ">
+              <p class="text-base poppins-regular second-text-color opacity-50 ">Debug using Chrome </p>
+              <p class="truncate text-base poppins-regular second-text-color opacity-50 ">DevTools,check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+            </div>
+        </div>
+        <div class="flex p-6 justify-between items-center">
+         <div>
+          <p class="text-sm poppins-regular texxt-color opacity-70">Deadline</p>
+          <h5 class="text-base poppins-medium texxt-color  ">21 March 2025</h5>
+         </div>
+          <button class="btn btn-color text-white text-base poppins-medium rounded-lg px-7 py-6">Completed</button>
+        </div>
+      </div>
+       <!-- 2nd 6 box - box-5-->
+      <div class="col-span-1 row-span-1 rounded-lg  background-color  " >
+        <div class="p-6 grid gap-y-7  ">
+          <p class="poppins-medium text-lg text-nowrap texxt-color text-center bg-white px-4 py-3  w-1/3 rounded-sm">Google LLC</p>
+          <h3 class="poppins-medium tracking-wider text-2xl texxt-color">Integrate OpenAI API </h3>
+         
+            <div class="truncate w-11/12 bg-white p-6 rounded-xl ">
+              <p class="text-base poppins-regular second-text-color opacity-50 ">Debug using Chrome </p>
+              <p class="truncate text-base poppins-regular second-text-color opacity-50 "> DevTools,check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+            </div>
+        </div>
+        <div class="flex p-6 justify-between items-center">
+         <div>
+          <p class="text-sm poppins-regular texxt-color opacity-70">Deadline</p>
+          <h5 class="text-base poppins-medium texxt-color  ">21 March 2025</h5>
+         </div>
+          <button class="btn btn-color text-white text-base poppins-medium rounded-lg px-7 py-6">Completed</button>
+        </div>
+      </div>
+       <!-- 2nd 6 box - box-6 -->
+      <div class=" col-span-1 row-span-1 rounded-lg  background-color  " >
+        <div class="p-6 grid gap-y-7  ">
+          <p class="poppins-medium text-lg texxt-color text-center bg-white px-4 py-3  w-1/3  rounded-sm">Glassdoar</p>
+          <h3 class="poppins-medium tracking-wider text-2xl texxt-color">Improve Job searching </h3>
+         
+            <div class="truncate w-11/12 bg-white p-6 rounded-xl ">
+              <p class="text-base poppins-regular second-text-color opacity-50 ">Debug using Chrome </p>
+              <p class="truncate text-base poppins-regular second-text-color opacity-50 ">DevTools,check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+            </div>
+        </div>
+        <div class="flex p-6 justify-between items-center">
+         <div>
+          <p class="text-sm poppins-regular texxt-color opacity-70">Deadline</p>
+          <h5 class="text-base poppins-medium texxt-color  ">21 March 2025</h5>
+         </div>
+          <button class="btn btn-color text-white text-base poppins-medium rounded-lg px-7 py-6">Completed</button>
+        </div>
+      </div>
+     
+      
      </div>
     
      </section>
      <!-- aside section -->
-      <section class="border-2 background-color  h-100">
-    
+      <section class="border-2 rounded-lg background-color flex flex-col justify-start items-center p-10 gap-4 ">
+           <div class="flex gap-x-5 items-center ">
+            <img class="w-6 h-6" src="assets/activity.png" alt="">
+            <p class="poppins-medium texxt-color text-xl">Activity</p>
+           </div>
+           <div class="" >
+            <button class="btn-color btn poppins-medium text-sm ml-2  text-white rounded-lg">Clear History</button>
+           </div>
+           
       </section>
+     
     </main>
     <script src="script/theme.js"></script>
     <script src="script/date.js"></script>
+   
 </body>
 
 </html>
