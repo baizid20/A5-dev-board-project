@@ -1,5 +1,5 @@
 const buttons = document.getElementsByClassName('function-btn');
-
+let allClicked = 0;
 for (const btn of buttons){
    
     btn.addEventListener('click',function(event){
@@ -47,7 +47,14 @@ for (const btn of buttons){
     newside.classList.add('background-color')
     newside.classList.add('mb-5')
     const fix = newside.innerText = titleText;
+     
 
+    allClicked++
+    if(allClicked === buttons.length)
+        setTimeout(() => {
+            alert('Congrats!!! You have completed all the current task')
+        }, 200);
+      
     })
 
 }

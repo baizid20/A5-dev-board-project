@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwind and daisy ui link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<!-- internal file link  -->
+ <link rel="stylesheet" href="style/style.css">
+<title>Dev Board</title> <title>Dev Board</title>
+<style>
+  /* color */
+   .gg{
+    background-color:#9ba5e9;
+    
+   }
+  .background-color {
+    /* background-color: aqua; */
+    background-color:rgb(230, 232, 255);
+
+  }
+  .texxt-color{
+    color :rgba(0, 48, 60, 1.00)
+   
+  }
+  .btn-color{
+    background-color:rgba(55, 82, 253, 1.00)
+  }
+  .primary-color{
+    background-color: white;
+  }
+  .second-text-color{
+    color:#000000
+  }
+  
+</style>
+</head>
+<body class="px-20 pt-8 pb-12  background-color">
+  <header class="" >
+    <!-- navbar section -->
+    <nav class=" bg-white p-5 w-full flex justify-between items-center ">
+       <div class="flex gap-2 items-center">
+        <img src="assets/logo.png" alt="">
+       <h3 class="text-4xl texxt-color">Dev<span class="poppins-bold">Board</span></h3>
+       </div>
+    <div id="backBtn">
+    <button   class=" btn btn-color text-white text-2xl poppins-medium rounded-lg px-7 py-8">Back to Desk</button>
+  </div>
+    </nav>
+    </header>
+
+   <main>
+      <h3 class="text-5xl poppins-semibold grid items-center justify-center mt-10">Blogs</h3>
+
+     <section>
+        <!-- 1st box -->
+        <div class="grid gap-y-2 my-8">
+            <h1 class="text-3xl poppins-semibold bg-white p-7">Question-1: What are the different ways to select an element in the DOM?</h1>
+            <div class="text-2xl poppins-semibold text-gray-500 bg-white p-7">There are many ways to select an element in the DOM.For example :
+                 <ol class="list-decimal p-5">
+                    <li>GetElementById() = We can select an element by their id with GetElementById().</li>
+                    <li>GetElementByClasses() = We can select an element by their class with GetElementByClasses().</li>
+                    <li>GetElementByTagName() = We can select an element by their tag name with GetElementByTagName().</li>
+                    <li>querySelector() = We can get a element by their css selector by querySelector().It return only one element.</li>
+                   
+                 </ol>
+                </div>
+        </div>
+        <!-- 2nd box -->
+        <div class="grid gap-y-2 my-8">
+            <h1 class="text-3xl poppins-semibold bg-white p-7">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+            <p class="text-2xl poppins-semibold text-gray-500 bg-white p-7">innerHTML, innerText, and textContent are not same.There are some difference between them. The innerHtml gives the html element of a element.We can get and change html by using it.In the other hand innerText gives text of an element.We also can get and change element text by using it. textContent is almost similar of innerText it gives only text of an element.But there is some difference between them textContent shows all the text even the hidden text also but innerText only gives the text that shows on the screen.textContent work faster.textContent doesn't read the text but innerText also dont read the text but it gives the visibles. </p>
+        </div>
+        <!-- 3rd box -->
+        <div class="grid gap-y-2 my-8">
+            <h1 class="text-3xl poppins-semibold bg-white p-7"> Question-3: What is event delegation in the DOM?</h1>
+            <p class="text-2xl poppins-semibold text-gray-500 bg-white p-7">Event delegation is a technique where we use event listener on parent element . Its make easy to get its child element unless we have use event listener each of a child element.</p>
+        </div>
+        <!-- 4th box -->
+        <div class="grid gap-y-2 my-8">
+            <h1 class="text-3xl poppins-semibold bg-white p-7">Question-4: What is event bubbling in the DOM?</h1>
+            <p class="text-2xl poppins-semibold text-gray-500 bg-white p-7">When we creat an event to a child element. Its goes down to top like, child - parent - grandparent - document and its called event bubbling.</p>
+        </div>
+        <!-- 5th box -->
+        <div class="grid gap-y-2 my-8">
+            <h1 class="text-3xl poppins-semibold bg-white p-7"> Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+            <p class="text-2xl poppins-semibold text-gray-500 bg-white p-7">
+                We can easily create and remove element using JavaScript. <br> <br>
+                <span class="border-b-4">Creating an element:</span> <br> <br>
+                 Use document.createElement() to create an element.And You have to also append it into its parent element like, <br>
+                1.let newElement = createElement('div') <br>
+                2.let parentMe = document.GetElementById('parent-me').<br>
+                3.parentMe.appendChild('newElement'). <br>
+                thats how you can create an element.
+                <br> <br>
+                <span class="border-b-4">Removing an element:</span> <br> <br>
+                 We can use remove.element() to remove an element.It will delete completely that element from dom.And we dont have to be worry about its child or parent.
+                  
+            </p>
+        </div>
+     </section>
+   </main>
+    
+    <script src="script/theme.js"></script>
+    <script src="script/date.js"></script>
+    <script src="script/button.js"></script>
+    <script src="script/function-btn.js"></script>
+   
+</body>
+
+</html>
