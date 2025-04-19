@@ -1,8 +1,4 @@
 
-document.getElementById('backBtn').addEventListener('click',function(event){
-    window.location.href="index.html";
- })
-
 // Date function
 const weekName = ['Sun','Mon','Tues','Wed','Thu','Fri','Sat']
 
